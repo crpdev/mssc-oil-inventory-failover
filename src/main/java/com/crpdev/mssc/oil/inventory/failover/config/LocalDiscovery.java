@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Profile;
  * Package: com.crpdev.mssc.oil.inventory.failover.config
  **/
 @EnableDiscoveryClient
-@Profile("local-discovery")
+@Profile({"local-discovery", "digitalocean"})
 @Configuration
 public class LocalDiscovery {
 }
